@@ -31,7 +31,7 @@ export default function Header() {
           aria-label="Toggle menu"
           aria-expanded={toggleMenu}
           onClick={() => setToggleMenu(!toggleMenu)}
-          className="md:hidden text-black"
+          className="md:hidden text-black z-50 relative"
         >
           <Bars3Icon className="h-6 w-6" />
         </button>
@@ -42,10 +42,10 @@ export default function Header() {
         <>
           <div
             onClick={() => setToggleMenu(false)}
-            className="fixed inset-0 bg-black bg-opacity-50 z-10"
+            className="fixed inset-0 bg-black bg-opacity-50 z-30"
           ></div>
 
-          <nav className="fixed top-16 left-0 w-full bg-gray-700 z-20 md:hidden rounded-b-md shadow-lg">
+          <nav className="fixed top-16 left-0 w-full bg-gray-700 z-40 md:hidden rounded-b-md shadow-lg">
             <ul className="flex flex-col items-center gap-4 text-white py-4 text-base">
               <li><Link to="/#home" onClick={() => setToggleMenu(false)}>Home</Link></li>
               <li><Link to="/#about" onClick={() => setToggleMenu(false)}>About</Link></li>
