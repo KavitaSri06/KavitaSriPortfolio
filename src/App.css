@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 header ul li{
-    @apply px-5 ;
+    @apply px-2 sm:px-5;
 }
 .bg-primary{
     background-color:rgb(132, 71, 190);
@@ -46,6 +46,6 @@ header ul li{
 }
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
-
-
