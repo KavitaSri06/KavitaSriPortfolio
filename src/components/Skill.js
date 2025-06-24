@@ -33,18 +33,18 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-secondary text-white px-6 py-20">
+    <section id="skills" className="bg-secondary overflow-x-hidden overflow-y-hidden text-white px-6 py-20">
       <div className="max-w-6xl mx-auto">
         {/* Skills Section */}
-         <motion.div
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.8, ease:"easeIn" }}
-          className="md: flex justify-center"
-        ><h1 className="text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12">
-          Skills
-        </h1></motion.div>
+         <motion.h1
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.5 }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12"
+>
+  Skills
+</motion.h1>
         
 
         <div className="flex flex-wrap justify-center gap-4 mb-20">
@@ -59,15 +59,15 @@ export default function Skills() {
         </div>
 
         {/* Certifications Section */}
-         <motion.div
-          initial={{ opacity: 0, x: -300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.8, ease:"easeIn" }}
-          className="md: flex justify-center"
-        > <h1 className=" mb-3 text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12">
-          Certifications
-        </h1></motion.div>
+        <motion.h1
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.5 }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12"
+>
+  Certification
+</motion.h1>
        
         <div className="mb-3 flex flex-row space-x-5 justify-center gap-4">
         <SiTata  size={50}/>
@@ -101,16 +101,15 @@ export default function Skills() {
   ))}
 </div>
 {/* Pratice Section */} 
-       <motion.div 
-          initial={{ opacity: 0, x: 300 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.8, ease:"easeIn" }}
-          className="md: flex justify-center"
-        > 
-        <h1 className=" mt-5 text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12">
-      Coding Pratice & Progress
-        </h1></motion.div>
+       <motion.h1
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.5 }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="text-4xl font-bold text-center font-hero-font border-b-2 w-fit mx-auto mb-12"
+>
+  Coding Pratice & Progress
+</motion.h1>
         <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
   {coding.map((cert, index) => (
     <div
