@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header ul li{
+    @apply px-5 ;
+}
+.bg-primary{
+    background-color:rgb(132, 71, 190);
+}
+.bg-secondary{
+    background-color: rgb(153, 97, 205);
+}
+
+.mobile-nav{
+    @apply fixed top-10 left-0 bg-gray-600 w-full h-1/5;
+}
+.mobile-nav  li{
+    @apply w-full h-full text-center border-2;
+}
+/* Hide scrollbar for all browsers */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+@layer utilities {
+  .animate-rise {
+    animation: rise 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+
